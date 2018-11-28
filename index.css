@@ -3,7 +3,6 @@ body{
 	height: 100%;
 	background-color: black;
 	font-family: 'Sedgwick Ave', cursive;
-
 }
 
 .jumbotron{
@@ -20,4 +19,7 @@ h1{
 }
 p{
 	font-family: 'Muli', sans-serif;
+}
+.row{
+	 margin-top: 3%;
 }
