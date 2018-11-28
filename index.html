@@ -12,27 +12,77 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="jumbotron">
+        <div class="overlay">
+            <h1 class="display-4">Liz Howell</h1>
+            <h3>Developer</h3>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
       <div class="container">
-          <a class="navbar-brand" href="#">Liz Howell</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="about/index.html">About Me</a>
-              <a class="nav-item nav-link" href="#">Portfolio</a>
-            </div>
+        <a class="navbar-brand" href="#">Liz Howell</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#about">About Me</a>
+            <a class="nav-item nav-link" href="#">Portfolio</a>
           </div>
+        </div>
       </div>
     </nav>
-    <div class="container">
-        <div class="jumbotron">
-            <div class="overlay">
-                <h1 class="display-4">Liz Howell</h1>
-                <h3>Developer</h3>
+      <div class="container">
+        <div id="about">
+          <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="images/profile.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Location: Logan, Utah <br> email: erhowell15@gmail.com<br></p>
+                  </div>
+                </div>
             </div>
+            <div class="col-8 offset-1">
+              <div class="row" style="margin-top:0px">
+                <div class="card" style="width: 95%;">
+                  <div class="card-header"><h5>Work Experience</h5></div>
+                    <div class="card-body">
+                      <div class="job">
+                        <h5 class="work-title">Space Dynamics</h5>
+                        <p> Jan 2018- Current</p>
+                        <p class="description"></p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 95%;">
+                  <div class="card-header"><h5> Education</span> </h5></div>
+                    <div class="card-body">
+                      <div class="job">
+                        <h5 class="work-title">Space Dynamics</h5>
+                        <p> Jan 2018- Current</p>
+                        <p class="description"></p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 95%;">
+                  <div class="card-header"><h5>Other Stuff</h5></div>
+                    <div class="card-body">
+                      <div class="job">
+                        <h5 class="work-title">Space Dynamics</h5>
+                        <p> Jan 2018- Current</p>
+                        <p class="description"></p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>      
         </div>
     </div>
     <!-- Optional JavaScript -->
