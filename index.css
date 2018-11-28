@@ -24,7 +24,7 @@ h1{
 	text-decoration: underline;
 }
 p, li{
-	font-family: 'Muli', sans-serif;
+	font-family: 'Muli', sans-serif, 'Titillium Web', sans-serif;;
 }
 .row{
 	 margin-top: 3%;
@@ -37,7 +37,10 @@ p, li{
 .fa{
 	font-size: 20px;
 	padding: 5px;
+	color:blue;
 }
-.icons{
+.icons a{
 		margin: auto;
+		font-style: none;
+		color:black;
 }
