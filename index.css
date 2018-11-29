@@ -5,9 +5,12 @@ body{
 	font-family: 'Sedgwick Ave', cursive;
 
 }
-nav .navbar{
-	margin: 0px;
-	position: relative;
+nav, .navbar{
+	position: -webkit-sticky;
+	position: sticky;
+	top:0px;
+	z-index: 1;
+	width: 100%;
 }
 .jumbotron{
      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/wall-paint.jpg");
@@ -18,7 +21,9 @@ nav .navbar{
     color:white;
     text-align: center;
     margin-bottom: 0px;
-
+    min-height: 100%;
+    border-bottom: 5px;
+    padding: 38vh 0px;
 }
 h1{
 	text-decoration: underline;
@@ -26,16 +31,14 @@ h1{
 p, li{
 	font-family: 'Muli', sans-serif, 'Titillium Web', sans-serif;;
 }
-.row{
-	 margin-top: 3%;
-}
+
 .school{
 	width: 50%;
 	height: auto;
 	float:left;
 }
 .fa{
-	font-size: 20px;
+	font-size: 15px;
 	padding: 5px;
 	color:blue;
 }
@@ -43,4 +46,26 @@ p, li{
 		margin: auto;
 		font-style: none;
 		color:black;
+}
+
+.card{
+	margin-top: 5px;
+}
+@media screen and (min-width: 800px )and (max-width:1200px ){
+	.fa{
+		display: none;
+	}
+	#contact a{
+		color:blue;
+	}
+}
+@media screen and (min-width: 400) and(max-width: 800px ){
+	.fa{
+		visibility: visible;
+		font-size: 20px;
+	}
+	#contact a{
+		color:blue;
+		font-size: 20px;
+	}
 }

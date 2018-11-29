@@ -8,8 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+
     <link href="https://fonts.googleapis.com/css?family=Muli|Sedgwick+Ave|Titillium" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Liz Howell</title>
   </head>
   <body>
@@ -28,32 +29,33 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#about">About Me</a>
+            <a class="nav-item nav-link" href="about/index.html">About Me</a>
           </div>
         </div>
       </div>
     </nav>
-      <div class="container" <body data-spy="scroll" data-target=".navbar" data-offset="50">>
+    <div class="container" <body data-spy="scroll" data-target=".navbar" data-offset="50">>
         <div id="about">
           <div class="row">
-            <div class="col-3">
-              <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="images/profile.jpg" alt="Card image cap">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+              <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="./images/profile.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="icons">
-                    <ul style="list-style: none; padding: 0;">
+                    <ul style="list-style: none; padding: 0;" id="contact">
                       <li><i class="fa fa-envelope-o"></i>erhowell15@gmail.com</li>
                       <li><i class="fa fa-linkedin"></i><a href="https://linkedin.com/in/erhowell15">www.linkedin.com/in/erhowell15</a></li>
                       <li><i href="https://github.com/erhowell" class="fa fa-github"></i><a href="https://github.com/erhowell">https://github.com/erhowell</a></li>
+                      <li><i class="fa fa-file" aria-hidden="true"></i><a href="./lHowell_resume.pdf">Download my resume</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="card" style="width: 20rem; margin-top: 3%;">
+              <div class="card" style="width: 100%;">
                 <div class="card-header">
                   Skills
                 </div>
-                <div class="card-body" style="width: 20rem;">
+                <div class="card-body" style="width: 100%;">
                   <ul>
                     <li>Programming languages : C#, C++, Java, HTML, CSS, JavaScript, Python, Bash, TCL, PHP.</li>
                     <li>.Net development</li>
@@ -64,9 +66,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-8 offset-1">
-              <div class="row" style="margin-top:0px">
-                <div class="card" style="width: 95%;">
+            <div class="col-xs-12 col-sm-12 col-md-8">
+                <div class="card" style="width: 100 %;">
                   <div class="card-header"><h5>Work Experience</h5></div>
                     <div class="card-body">
                       <div class="job">
@@ -93,33 +94,30 @@
                       </div>
                     </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="card" style="width: 95%;">
-                  <div class="card-header"><h5> Education</span> </h5></div>
-                    <div class="card-body">
-                     <div class="job">
-                        <h5 class="work-title"><u>Utah State University</u></h5>
-                        <ul>
-                          <li>BS - Computer Engineering</li>
-                          <li>Expected Grad Date: Dec 2020</li>
-                          <li>VP Retention - Engineering Council 2018-2019</li>
-                          <li>Engineering Council Member Spring 2018-Current</li>
-                          <li>Member of the Beta Delta Chapter of the National Kappa Delta Sorority</li>
-                        </ul>
-                      </div>
-                      <div class="job">
-                        <h5 class="work-title"><u>Lamar University</u></h5>
-                        <ul>
-                          <li>Fall 2014 - Spring 2016</li>
-                          <li>Graduated Cumm Laude from The Texas Academy of Leadership in the Humanities at Lamar University, an early college boarding school for gifted students</li>
-                          <li>Graduated with over 60 college credits.</li>
-                          <li>Member of the Student Chapter of IEEE.</li>
-                        </ul>
-                      </div>
+              <div class="card" style="width: 100%;">
+                <div class="card-header"><h5> Education</span> </h5></div>
+                  <div class="card-body">
+                   <div class="job">
+                      <h5 class="work-title"><u>Utah State University</u></h5>
+                      <ul>
+                        <li>BS - Computer Engineering</li>
+                        <li>Expected Grad Date: Dec 2020</li>
+                        <li>VP Retention - Engineering Council 2018-2019</li>
+                        <li>Engineering Council Member Spring 2018-Current</li>
+                        <li>Member of the Beta Delta Chapter of the National Kappa Delta Sorority</li>
+                      </ul>
                     </div>
+                    <div class="job">
+                      <h5 class="work-title"><u>Lamar University</u></h5>
+                      <ul>
+                        <li>Fall 2014 - Spring 2016</li>
+                        <li>Graduated Cumm Laude from The Texas Academy of Leadership in the Humanities at Lamar University, an early college boarding school for gifted students</li>
+                        <li>Graduated with over 60 college credits.</li>
+                        <li>Member of the Student Chapter of IEEE.</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
             </div>
           </div>      
         </div>
