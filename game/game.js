@@ -17,14 +17,14 @@ window.addEventListener('load', resize, false);
 window.addEventListener('resize', resize, false);
 var ctx = canvas.getContext("2d");
 var balls =[];
-for(var i = 0; i<12; i++){
+for(var i = 0; i<10; i++){
 	balls[i] =[];
-	for(var j=0; j<12; j++){
-		balls[i][j] ={ 	x: Math.floor(Math.random()*canvas.width), 
-						y: Math.floor(Math.random()*canvas.height*4),
-						dx: Math.random()+.15,
-						dy: Math.random() -.5,
-		 				r: Math.floor(Math.random()*canvas.width*.1),
+	for(var j=0; j<10; j++){
+		balls[i][j] ={ 	x: Math.floor(Math.random()*canvas.width+ (canvas.width*.25)), 
+						y: Math.floor(Math.random()*canvas.height),
+						dx: Math.random()*2-1,
+						dy: Math.random()*2 -1,
+		 				r: Math.floor(Math.random()*canvas.width*.05),
 		 				red:Math.floor(Math.random()*255),
 		 				blue:Math.floor(Math.random()*255),
 		 				green:Math.floor(Math.random()*255),
@@ -37,8 +37,8 @@ for(var i = 0; i<12; i++){
 
 
 function drawBalls(){
-	for(var i = 0; i<12; i++){
-		for(var j=0; j<12; j++){
+	for(var i = 0; i<10; i++){
+		for(var j=0; j<10; j++){
 			ctx.beginPath();
 			ctx.imageSmoothingEnabled = false;
 			ctx.arc(balls[i][j].x,balls[i][j].y,balls[i][j].r, 0, Math.PI*2 );
@@ -52,14 +52,31 @@ function drawHeading(){
 	ctx.font=   "100px Sedgwick Ave";
 	ctx.textAlign = "center";
 	ctx.fillStyle ="white";
-	ctx.fillText("Liz Howell", canvas.width/2, canvas.height/2 );
+	ctx.fillText( "Liz Howell", canvas.width/2, canvas.height/2);
+}
+
+function drawSubheader(){
+	ctx.font=   "75px Sedgwick Ave";
+	ctx.textAlign = "center";
+	ctx.fillStyle ="white";
+	ctx.fillText( "Developer", canvas.width/2, canvas.height/2+100);
+}
+function drawbackground(){
+	ctx.beginPath();
+	ctx.imageSmoothingEnabled = false;
+	ctx.rect(canvas.width/2-(canvas.width/2), canvas.height/2-(canvas.height/2), canvas.width, canvas.height);
+	ctx.fillStyle = "rgba(0,0,0,.45)";
+	ctx.fill();
+	ctx.closePath();
 }
 function game(){
 	ctx.clearRect(0,0,canvas.width, canvas.height);
 	drawBalls();
+	drawbackground();
 	drawHeading();
-	for(var i = 0; i<12; i++){
-		for(var j=0; j<12; j++){
+	drawSubheader();
+	for(var i = 0; i<10; i++){
+		for(var j=0; j<10; j++){
 			if(balls[i][j].x +balls[i][j].dx > canvas.width-balls[i][j].r || balls[i][j].x+balls[i][j].dy < 0+balls[i][j].r){
 				balls[i][j].dx=-balls[i][j].dx;
 			}
