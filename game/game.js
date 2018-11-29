@@ -49,14 +49,24 @@ function drawBalls(){
 	}
 }
 function drawHeading(){
-	ctx.font=   "100px Sedgwick Ave";
+	if(canvas.width >800){
+		ctx.font=   "100px Sedgwick Ave";
+	}
+	else{
+			ctx.font= "60px Sedgwick Ave";
+	}
 	ctx.textAlign = "center";
 	ctx.fillStyle ="white";
 	ctx.fillText( "Liz Howell", canvas.width/2, canvas.height/2);
 }
 
 function drawSubheader(){
-	ctx.font=   "75px Sedgwick Ave";
+	if(canvas.width >800){
+		ctx.font=   "75px Sedgwick Ave";
+	}
+	else{
+			ctx.font= "45px Sedgwick Ave";
+	}
 	ctx.textAlign = "center";
 	ctx.fillStyle ="white";
 	ctx.fillText( "Developer", canvas.width/2, canvas.height/2+100);
