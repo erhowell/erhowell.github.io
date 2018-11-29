@@ -2,7 +2,7 @@ var canvas = document.getElementById("game");
 function resize() {
 	// Our canvas must cover full height of screen
 	// regardless of the resolution
-	var height = window.innerHeight*.95;
+	var height = window.innerHeight*.85;
 	var width = window.innerWidth;
 	canvas.width = width;
 	canvas.height = height
@@ -24,7 +24,7 @@ for(var i = 0; i<12; i++){
 						y: Math.floor(Math.random()*canvas.height*4),
 						dx: Math.random()+.15,
 						dy: Math.random() -.5,
-		 				r: Math.floor(Math.random()*canvas.width*.025),
+		 				r: Math.floor(Math.random()*canvas.width*.1),
 		 				red:Math.floor(Math.random()*255),
 		 				blue:Math.floor(Math.random()*255),
 		 				green:Math.floor(Math.random()*255),
@@ -48,10 +48,16 @@ function drawBalls(){
 		}
 	}
 }
-
+function drawHeading(){
+	ctx.font=   "100px Sedgwick Ave";
+	ctx.textAlign = "center";
+	ctx.fillStyle ="white";
+	ctx.fillText("Liz Howell", canvas.width/2, canvas.height/2 );
+}
 function game(){
 	ctx.clearRect(0,0,canvas.width, canvas.height);
 	drawBalls();
+	drawHeading();
 	for(var i = 0; i<12; i++){
 		for(var j=0; j<12; j++){
 			if(balls[i][j].x +balls[i][j].dx > canvas.width-balls[i][j].r || balls[i][j].x+balls[i][j].dy < 0+balls[i][j].r){
