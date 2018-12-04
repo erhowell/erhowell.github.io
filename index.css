@@ -1,8 +1,9 @@
 body, html{
 	width: 100%;
 	height: auto;
-	background-color: black;
+	background-color: white;
 	font-family: 'Sedgwick Ave', cursive;
+	color:black;
 
 }
 .jumbotron{
@@ -37,44 +38,34 @@ nav, .navbar{
 h1{
 	text-decoration: underline;
 }
-p, li{
-	font-family: 'Muli', sans-serif, 'Titillium Web', sans-serif;;
+p, li, h3,h4, h5{
+	font-family: 'Muli', sans-serif, 'Titillium Web', sans-serif;
+
 }
 
-.school{
-	width: 50%;
+#about{
+	width: 100%;
 	height: auto;
-	float:left;
+	text-align: left;
+	color: black;
 }
-.fa{
-	font-size: 15px;
-	padding: 5px;
-	color:blue;
+#about h2{
+	text-align: center;
 }
-.icons a{
-		margin: auto;
-		font-style: none;
-		color:black;
+#about h3{
+		font-family: 'Sedgwick Ave', cursive;
+}
+#about h4{
+	font-family: 'Sedgwick Ave', cursive;
+	width: auto;
+	height: auto;
+}
+#about .row{
+	border-bottom: black 1px solid;
+	padding: 5vh 0px;
 }
 
-.card{
-	margin-top: 5px;
-}
-@media screen and (min-width: 800px )and (max-width:1200px ){
-	.fa{
-		display: none;
-	}
-	#contact a{
-		color:blue;
-	}
-}
-@media screen and (min-width: 400) and(max-width: 800px ){
-	.fa{
-		visibility: visible;
-		font-size: 20px;
-	}
-	#contact a{
-		color:blue;
-		font-size: 20px;
-	}
+#about .col .row{
+	border-bottom: none;
+	padding-bottom: 0px;
 }
