@@ -34,6 +34,11 @@ nav, .navbar{
 	top:0px;
 	z-index: 1;
 	width: 100%;
+   	font-family: 'Sedgwick Ave', cursive;
+}
+.nav-item{
+	font-family: 'Sedgwick Ave', cursive;
+	margin-right: 5px;
 }
 h1{
 	text-decoration: underline;
