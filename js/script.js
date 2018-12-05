@@ -13,7 +13,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 	$("img").css("width", "100%");
   	$(".link").attr("href",projectData.repository);
   	if(projectData.projectSite!= ''){
-  		$('.btn-secondary').after('<button type="button" class="btn btn-primary"><a class="site">View Site</a></button>');
+  		$('.btn-secondary').after('<button type="button" class="btn btn-info"><a class="site">View Site</a></button>');
   		$(".site").attr("href",projectData.projectSite);
   	}
  	});
@@ -21,7 +21,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 
 $('#exampleModal').on('hide.bs.modal', function (event) {
 	$(".carousel-inner").empty();
-	$(".site").remove();
+	$(".btn-info").remove();
  });
 
 function getDescription(project){
@@ -41,7 +41,7 @@ function getDescription(project){
 				image:["./images/therapy/home-page.png", "./images/therapy/login.png",
 				"./images/therapy/your-professional.png", "./images/therapy/find-professional.png"] ,
 				name:'Therapy Site',
-				description:"This was my USU Hackaton project. My team of 4 and myself put together a prototype for a website where users can sign up, find a health professional and schedule an appointment. I had never used a lamp stack, nor had I ever taken project lead. We built it on a local server  so there is no live site, but you can still see the source code. ",
+				description:"This was my USU Hackaton project. My team of 4 and myself put together a prototype for a website where users can sign up, find a health professional and schedule an appointment. I actually didn't do monst of the front end. I ended up having to learn how to set up a LAMP stack and do a lot of the back end coding as well as teaching some of my teammates front end. We built it on a local server so there is no live site, but you can still see the source code. ",
 				repository:'https://github.com/erhowell/therapyhelp',
 				projectSite:''
 			};
