@@ -50,9 +50,9 @@ function getDescription(project){
 			var projectData= {
 				image:["./images/js-bubbles.png"] ,
 				name:'Java Script Bubbles Animation',
-				description: "A basic canvas animation. This used to be my Jumbotron background... Thank God its not anymore. open up to a new page to see it do its thing."
+				description: "A basic canvas animation. This used to be my Jumbotron background... Thank God its not anymore. open up to a new page to see it do its thing.",
 				repository:'https://github.com/erhowell/therapyhelp',
-				projectSite:''
+				projectSite:'./bubbles.html'
 			};
 			return projectData;
 	}
