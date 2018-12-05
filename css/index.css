@@ -50,7 +50,6 @@ p, li, h3,h4, h5{
 }
 
 .container .row{
-	border-bottom: black 1px solid;
 	padding: 5vh 0px;
 }
 
@@ -71,7 +70,10 @@ p, li, h3,h4, h5{
 	width: auto;
 	height: auto;
 }
-
+#about .row{
+	margin-bottom: 
+	border-bottom: black 1px solid;
+}
 #about .col .row{
 	border-bottom: none;
 	padding-bottom: 0px;
@@ -79,4 +81,10 @@ p, li, h3,h4, h5{
 .modal button a{
 	color:white;
 	font-style: none;
+}
+#media{
+	text-align: center;
+}
+#media i{
+	font-size: 10vh;
 }
