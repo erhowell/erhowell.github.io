@@ -48,6 +48,11 @@ p, li, h3,h4, h5{
 
 }
 
+.container .row{
+	border-bottom: black 1px solid;
+	padding: 5vh 0px;
+}
+
 #about{
 	width: 100%;
 	height: auto;
@@ -64,10 +69,6 @@ p, li, h3,h4, h5{
 	font-family: 'Sedgwick Ave', cursive;
 	width: auto;
 	height: auto;
-}
-#about .row{
-	border-bottom: black 1px solid;
-	padding: 5vh 0px;
 }
 
 #about .col .row{

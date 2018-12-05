@@ -50,14 +50,18 @@
     <div class="row">
       <div class="col-md-4">
         <button type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="devSite">
+          <h3>Portfolio Site</h3>
           <img src="./images/portfolioSite.png" style="width: 100%;">
         </button>
       </div>
       <div class="col-md-4">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+        <button type="button"  data-toggle="modal" data-target="#exampleModal" data-whatever="therapy">
+          <h3>Therapy Site</h3>
+          <img src="./images/therapy/home-page.png" style="width: 100%;">
+        </button>
       </div>
       <div class="col-md-4">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+        <button type="button"  data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
       </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -68,8 +72,19 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
-                <img class="image" style="width: 100%;"/>
+              <div class="modal-body" id="modalBody">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
                 <p class="description"></p>
               </div>
               <div class="modal-footer">
