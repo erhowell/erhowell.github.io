@@ -18,8 +18,10 @@
 
 <body>
   <div class="jumbotron" id="jumbotron">
-    <canvas id="game" width="1000" height="500">
-    </canvas>
+    <div class="overlay">
+      <h1><u>Liz Howell</u></h1>
+      <h3>Developer</h3>
+    </div>
   </div>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
@@ -61,7 +63,10 @@
         </button>
       </div>
       <div class="col-md-4">
-        <button type="button"  data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+        <button type="button"  data-toggle="modal" data-target="#exampleModal" data-whatever="jsBubbles">
+          <h3>Bubbles Animation</h3>
+          <img src="./images/js-bubbles.png" style="width: 100%;">
+        </button>
       </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
